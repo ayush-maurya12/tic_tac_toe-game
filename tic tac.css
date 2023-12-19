@@ -1,0 +1,76 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.game{
+    /* background-color: aqua; */
+    /* display:flex; */
+    justify-content: center;
+    margin-top:10px;
+    margin:auto;
+    background-color:burlywood;
+}
+.cantainer{
+    display:grid;
+    grid-template-rows:repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    margin:10px;
+    margin-left:450px;
+    padding-top:10px;
+}
+.box{
+    border:1px solid black;
+    font-size: 8vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(210, 161, 161);
+    cursor: pointer;
+}
+.gameinfo{
+    margin-top:50px;
+    margin-left:400px;
+    /* background-color: yellow; */
+    width:40vw;
+    height:25vw;
+    text-align:center;
+}
+#reset{
+    margin-top:25px;
+    font-size:2vw;
+    height:3.5vw;
+    width:15vw;
+    border:1px solid rgb(237, 8, 8);
+    border-radius:5px;
+    transition: all 1s;
+}
+#result{
+    margin-top:20px;
+    font-size: 3vw;
+    transform: all 3s;
+}
+#info{
+    font-size: 3vw;
+}
+.box:first-child,
+.box:nth-child(2),
+.box:nth-child(3){
+    border-top:none;
+  }
+.box:nth-child(3),
+.box:nth-child(6),
+.box:nth-child(9){
+    border-right:none;
+}
+.box:first-child,
+.box:nth-child(4),
+.box:nth-child(7){
+    border-left:none;
+}
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9){
+    border-bottom: none;
+}
